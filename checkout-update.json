@@ -1,0 +1,36 @@
+{
+  "line_items": [
+    {
+      "id": "gid://shopify/CartLine/2fa5d3d9-e5c0-4440-8037-29d7e651e0ea?cart=hWNH7Yxwyfd0osQ7wOm7qfy8",
+      "item": {
+        "id": "gid://shopify/ProductVariant/47936975372530"
+      },
+      "quantity": 1
+    }
+  ],
+  "buyer": {
+    "email": "test@example.com"
+  },
+  "fulfillment": {
+    "methods": [
+      {
+        "line_item_ids": [
+          "gid://shopify/CartLine/2fa5d3d9-e5c0-4440-8037-29d7e651e0ea?cart=hWNH7Yxwyfd0osQ7wOm7qfy8"
+        ],
+        "destinations": [
+          {
+            "id": "destination-1",
+            "first_name": "Test",
+            "last_name": "Customer",
+            "street_address": "123 Test Street",
+            "address_locality": "Surat",
+            "address_region": "Gujarat",
+            "postal_code": "395007",
+            "address_country": "IN"
+          }
+        ],
+        "selected_destination_id": "destination-1"
+      }
+    ]
+  }
+}
