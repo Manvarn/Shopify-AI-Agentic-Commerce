@@ -1,0 +1,44 @@
+﻿<div id="ai-shopping-widget">
+  <button id="ai-chat-toggle" type="button" aria-label="Open AI Shopping Assistant">
+    AI
+  </button>
+
+  <div id="ai-chat-window" hidden>
+    <div class="ai-chat-header">
+      <div>
+        <strong>AI Shopping Assistant</strong>
+        <small>Ask me anything about our products</small>
+      </div>
+
+      <button id="ai-chat-close" type="button" aria-label="Close">X</button>
+    </div>
+
+    <div id="ai-chat-messages">
+      <div class="ai-message ai-message-bot">
+        Hi! What are you looking for today?
+      </div>
+    </div>
+
+    <form id="ai-chat-form">
+      <input
+        id="ai-chat-input"
+        type="text"
+        placeholder="Search products or ask a question..."
+        autocomplete="off"
+      >
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+{{ 'ai-shopping-chat.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'ai-shopping-chat.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "AI Shopping Chat",
+  "target": "body",
+  "settings": []
+}
+{% endschema %}
